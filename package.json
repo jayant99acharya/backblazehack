@@ -1,0 +1,8 @@
+{
+  "name": "genmedia-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node -e \"const fs=require('fs'),child=require('child_process');if(fs.existsSync('frontend')){child.execSync('cd frontend && npm install && npm run build',{stdio:'inherit'})}else{child.execSync('npm run build',{stdio:'inherit'})}\""
+  }
+}
